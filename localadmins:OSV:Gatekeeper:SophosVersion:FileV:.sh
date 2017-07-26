@@ -63,10 +63,10 @@ fi
 function SophosAntiVirus {
 
 SophosVers=$( defaults read /Library/Sophos\ Anti-Virus/product-info ProductVersion 2> /dev/null )
-if [[ "$SophosVers" == "" ]]; then
-    echo "SophosVers=None"
+if [[ "$SophosVersion" == "" ]]; then
+    echo "SophosVersion=None"
 else
-    echo "SophosVers=$SophosVers"
+    echo "SophosVersion=$SophosVersion"
 fi
 }
 
